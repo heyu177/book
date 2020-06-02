@@ -1,0 +1,16 @@
+<view id="firstViewContainer">
+  <swiper indicator-dots indicator-color="pink" indicator-active-color="green">
+    <swiper-item>
+      <image src="/static/imgs/firstView/1.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/static/imgs/firstView/2.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/static/imgs/firstView/3.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/static/imgs/firstView/nvsheng.jpg"></image>
+    </swiper-item>
+  </swiper>
+</view>
