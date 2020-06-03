@@ -1,11 +1,11 @@
 {
   "pages": [
-    "pages/firstView/firstView"
+    "pages/firstView/firstView",
+    "pages/index/index"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarBackgroundColor": "#02a774",
+    "navigationBarTitleText": "硅谷书城",
     "navigationBarTextStyle": "black"
   },
   "style": "v2",

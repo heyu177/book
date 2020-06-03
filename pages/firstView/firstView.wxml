@@ -13,5 +13,5 @@
       <image src="/static/imgs/firstView/nvsheng.jpg"></image>
     </swiper-item>
   </swiper>
-  <button class="btn" hidden="{{index!=3}}">开始体验</button>
+  <button class="btn" hidden="{{index!=3}}" bindtap="toIndex">开始体验</button>
 </view>
