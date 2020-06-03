@@ -1,21 +1,13 @@
-// pages/firstView.js
+// pages/personal/personal.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    index:0
+
   },
 
-  handleChange(event){
-    this.setData({index:event.detail.current});
-  },
-  toIndex(){
-    wx.switchTab({
-      url: '/pages/index/index',
-    })
-  },
   /**
    * 生命周期函数--监听页面加载
    */
