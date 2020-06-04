@@ -1,1 +1,38 @@
-/* pages/index/index.wxss */
+#indexContainer swiper{
+  width: 100%;
+  height: 400rpx;
+}
+#indexContainer swiper image{
+  width: 100%;
+  height: 100%;
+}
+.booksList .listNav{
+  padding: 10rpx;
+}
+.booksList .listNav .more{
+  float: right;
+}
+.list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.list .bookItem{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1rpx solid #eee;
+  box-sizing: border-box;
+}
+.list .bookItem:nth-child(2n+1){
+  border-right: 1rpx solid #eee;
+}
+.list .bookItem image{
+  width: 200rpx;
+  height: 200rpx;
+  margin: 10rpx 0;
+}
+.list .bookItem text{
+  font-size: 24rpx;
+  line-height: 50rpx;
+}
