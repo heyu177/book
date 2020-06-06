@@ -1,0 +1,49 @@
+#detailContainer .bookInfo{
+  display: flex;
+  flex-direction: column;
+}
+#detailContainer .bookInfo > text{
+  text-align: center;
+  font-size: 40rpx;
+  font-weight: bold;
+  margin: 10rpx 0;
+}
+#detailContainer .bookInfo image{
+  width: 70%;
+  height: 700rpx;
+  margin: 0 auto;
+}
+#detailContainer .bookInfo .info{
+  margin-left: 15%;
+  display: flex;
+  flex-direction: column;
+}
+#detailContainer .bookInfo .info text{
+  line-height: 50rpx;
+}
+#detailContainer .shareBtn{
+  width: 300rpx;
+  height: 80rpx;
+  text-align: center;
+  margin: 20rpx auto;
+}
+#detailContainer .content{
+  margin: 30rpx 100rpx;
+}
+#detailContainer .content > view{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50rpx;
+}
+#detailContainer .content > view > view{
+  text-align: center;
+}
+#detailContainer .content text:first-child{
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #02a774;
+}
+#detailContainer .content > view text{
+  font-size: 28rpx;
+  text-indent: 28rpx;
+}

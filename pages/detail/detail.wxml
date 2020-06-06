@@ -1,0 +1,27 @@
+<view id="detailContainer">
+  <view class="bookInfo">
+    <text>平凡的世界</text>
+    <image src="/static/imgs/firstView/nvsheng.jpg"></image>
+    <view class="info">
+      <text>作者：路遥</text>
+      <text>出版社：人民出版社</text>
+      <text>出版日期：2019</text>
+      <text>定价：55</text>
+    </view>
+  </view>
+  <button class="shareBtn">分享给好友</button>
+  <view class="content">
+    <view>
+      <view>
+        <text>作者简介</text>
+      </view>
+      <text>啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</text>
+    </view>
+    <view>
+      <view>
+        <text>内容简介</text>
+      </view>
+      <text>啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</text>
+    </view>
+  </view>
+</view>

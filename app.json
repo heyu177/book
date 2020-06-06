@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/detail/detail",
     "pages/firstView/firstView",
     "pages/index/index",
     "pages/personal/personal",
@@ -12,25 +13,25 @@
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",
-  "tabBar":{
-    "list":[
+  "tabBar": {
+    "list": [
       {
-        "pagePath":"pages/index/index",
-        "text":"图书列表",
-        "iconPath":"/static/imgs/tabs/book.png",
-        "selectedIconPath":"/static/imgs/tabs/book-active.png"
+        "pagePath": "pages/index/index",
+        "text": "图书列表",
+        "iconPath": "/static/imgs/tabs/book.png",
+        "selectedIconPath": "/static/imgs/tabs/book-active.png"
       },
       {
-        "pagePath":"pages/searchBook/searchBook",
-        "text":"搜素图书",
-        "iconPath":"/static/imgs/tabs/todo.png",
-        "selectedIconPath":"/static/imgs/tabs/todo-active.png"
+        "pagePath": "pages/searchBook/searchBook",
+        "text": "搜素图书",
+        "iconPath": "/static/imgs/tabs/todo.png",
+        "selectedIconPath": "/static/imgs/tabs/todo-active.png"
       },
       {
-        "pagePath":"pages/personal/personal",
-        "text":"个人中心",
-        "iconPath":"/static/imgs/tabs/me.png",
-        "selectedIconPath":"/static/imgs/tabs/me-active.png"
+        "pagePath": "pages/personal/personal",
+        "text": "个人中心",
+        "iconPath": "/static/imgs/tabs/me.png",
+        "selectedIconPath": "/static/imgs/tabs/me-active.png"
       }
     ]
   }
