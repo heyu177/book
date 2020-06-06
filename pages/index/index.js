@@ -1,18 +1,20 @@
 // pages/index/index.js
+const datas=require("./datas/data.js");
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    booksArr:datas,
+    carouel:[...datas].splice(0,4)
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
   },
 
   /**

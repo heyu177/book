@@ -1,13 +1,7 @@
 <view id="indexContainer">
 	<swiper indicator-dots indicator-color="pink" indicator-active-color="green">
-		<swiper-item>
-			<image src="/static/imgs/firstView/1.jpg"></image>
-		</swiper-item>
-		<swiper-item>
-			<image src="/static/imgs/firstView/2.jpg"></image>
-		</swiper-item>
-		<swiper-item>
-			<image src="/static/imgs/firstView/3.jpg"></image>
+		<swiper-item wx:for="{{carouel}}">
+			<image src="{{item.image}}"></image>
 		</swiper-item>
 	</swiper>
   <view class="booksList">
@@ -16,25 +10,10 @@
       <text class="more"> > </text>
     </view>
     <view class="list">
-      <view class="bookItem">
-        <image src="/static/imgs/firstView/nvsheng.jpg"></image>
-        <text>《平凡的世界》</text>
-        <text>路遥</text>
-      </view>
-      <view class="bookItem">
-        <image src="/static/imgs/firstView/nvsheng.jpg"></image>
-        <text>《平凡的世界》</text>
-        <text>路遥</text>
-      </view>
-      <view class="bookItem">
-        <image src="/static/imgs/firstView/nvsheng.jpg"></image>
-        <text>《平凡的世界》</text>
-        <text>路遥</text>
-      </view>
-      <view class="bookItem">
-        <image src="/static/imgs/firstView/nvsheng.jpg"></image>
-        <text>《平凡的世界》</text>
-        <text>路遥</text>
+      <view class="bookItem" wx:for="{{booksArr}}">
+        <image src="{{item.image}}"></image>
+        <text>《{{item.title}}》</text>
+        <text>{{item.author}}</text>
       </view>
     </view>
   </view>
