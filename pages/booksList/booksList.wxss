@@ -1,0 +1,9 @@
+#booksListContainer .bookItem{
+  display: flex;
+  padding: 10rpx;
+}
+#booksListContainer .bookItem .bookImg{
+  width: 140rpx;
+  height: 140rpx;
+  margin-right: 20rpx;
+}

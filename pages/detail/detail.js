@@ -12,7 +12,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    const eventChannel=this.getOpenerEventChannel();
+    eventChannel.on("toDetail",data => {
+      wx.setNavigationBarTitle({
+        title: data.title,
+      })
+      this.setData({bookItem:data});
+    });
   },
 
   /**
@@ -61,6 +67,10 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
+    return {
+      title:"硅谷图书",
+      path:"/pages/detail/detail",
+      imageUrl:"/static/imgs/firstView/nvsheng.jpg"
+    }
   }
 })

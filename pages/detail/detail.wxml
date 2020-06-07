@@ -1,27 +1,27 @@
 <view id="detailContainer">
   <view class="bookInfo">
-    <text>平凡的世界</text>
-    <image src="/static/imgs/firstView/nvsheng.jpg"></image>
+    <text>{{bookItem.title}}</text>
+    <image src="{{bookItem.image}}"></image>
     <view class="info">
-      <text>作者：路遥</text>
-      <text>出版社：人民出版社</text>
-      <text>出版日期：2019</text>
-      <text>定价：55</text>
+      <text>作者：{{bookItem.author}}</text>
+      <text>出版社：{{bookItem.publisher}}</text>
+      <text>出版日期：{{bookItem.pubdate}}</text>
+      <text>定价：{{bookItem.price}}</text>
     </view>
   </view>
-  <button class="shareBtn">分享给好友</button>
+  <button class="shareBtn" open-type="share">分享给好友</button>
   <view class="content">
     <view>
       <view>
         <text>作者简介</text>
       </view>
-      <text>啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</text>
+      <text>{{bookItem.author_intro}}</text>
     </view>
     <view>
       <view>
         <text>内容简介</text>
       </view>
-      <text>啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</text>
+      <text>{{bookItem.summary}}</text>
     </view>
   </view>
 </view>

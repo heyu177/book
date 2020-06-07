@@ -1,28 +1,18 @@
-// pages/index/index.js
-const datas=require("./datas/data.js");
+// pages/booksList/booksList.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    booksArr:datas,
-    carouel:[...datas].splice(0,4)
+
   },
-  toDetail(event){
-    wx.navigateTo({
-      url: '/pages/detail/detail',
-      success(res){
-        let item=event.currentTarget.dataset.item;
-        res.eventChannel.emit("toDetail",item);
-      }
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+
   },
 
   /**

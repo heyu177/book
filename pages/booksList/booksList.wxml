@@ -1,0 +1,11 @@
+<view id="booksListContainer">
+  <view class="bookItem">
+    <image class="bookImg" src="/static/imgs/firstView/nvsheng.jpg"></image>
+    <view class="bookInfo">
+      <text>平凡的世界</text>
+      <text>作者：路遥</text>
+      <text>出版社：</text>
+    </view>
+    <text class="bookPrice">55</text>
+  </view>
+</view>

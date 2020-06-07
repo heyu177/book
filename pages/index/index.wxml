@@ -10,7 +10,7 @@
       <text class="more"> > </text>
     </view>
     <view class="list">
-      <view class="bookItem" wx:for="{{booksArr}}">
+      <view bindtap="toDetail" data-item="{{item}}" class="bookItem" wx:for="{{booksArr}}">
         <image src="{{item.image}}"></image>
         <text>《{{item.title}}》</text>
         <text>{{item.author}}</text>
