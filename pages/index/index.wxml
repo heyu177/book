@@ -7,7 +7,7 @@
   <view class="booksList">
     <view class="listNav">
       <text>全部商品</text>
-      <text class="more"> > </text>
+      <text class="more" bindtap="toBooksList"> > </text>
     </view>
     <view class="list">
       <view bindtap="toDetail" data-item="{{item}}" class="bookItem" wx:for="{{booksArr}}">

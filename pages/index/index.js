@@ -18,6 +18,14 @@ Page({
       }
     })
   },
+  toBooksList(event){
+    wx.navigateTo({
+      url: '/pages/booksList/booksList',
+      success:res => {
+        res.eventChannel.emit("booksList",this.data.booksArr);
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

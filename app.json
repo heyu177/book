@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/booksList/booksList",
     "pages/firstView/firstView",
+    "pages/booksList/booksList",
     "pages/detail/detail",
     "pages/index/index",
     "pages/personal/personal",
