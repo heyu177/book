@@ -1,11 +1,13 @@
-<view id="booksListContainer">
-  <view class="bookItem" wx:for="{{booksArr}}">
-    <image class="bookImg" src="{{item.image}}"></image>
-    <view class="bookInfo">
-      <text>{{item.title}}</text>
-      <text>作者：{{item.author}}</text>
-      <text>出版社：{{item.publisher}}</text>
-    </view>
-    <text class="bookPrice">{{item.price}}</text>
-  </view>
-</view>
+<template name="booksList">
+	<view id="booksListContainer">
+		<view class="bookItem" wx:for="{{booksArr}}">
+			<image class="bookImg" src="{{item.image}}"></image>
+			<view class="bookInfo">
+				<text>{{item.title}}</text>
+				<text>作者：{{item.author}}</text>
+				<text>出版社：{{item.publisher}}</text>
+			</view>
+			<text class="bookPrice">{{item.price}}</text>
+		</view>
+	</view>
+</template>

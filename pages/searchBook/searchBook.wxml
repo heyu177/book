@@ -1,2 +1,10 @@
-<!--pages/searchBook/searchBook.wxml-->
-<text>pages/searchBook/searchBook.wxml</text>
+<import src="/pages/booksList/booksList.wxml"/>
+<view id="serchContainer">
+	<view class="seatchHeader">
+		<input bindconfirm="handleSearch" placeholder="书中自有黄金屋" placeholder-class="placeholder" bindinput="searchContent" value="{{searchContent}}" confirm-type="搜素"></input>
+		<text class="clear" hidden="{{!searchContent}}" bindtap="handleClear">X</text>
+	</view>
+  <view wx:if="{{booksArr.length}}">
+    <template is="booksList" data="{{booksArr}}"></template>
+  </view>
+</view>

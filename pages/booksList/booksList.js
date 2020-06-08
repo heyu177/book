@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    booksArr:[]
   },
 
   /**
@@ -16,6 +16,7 @@ Page({
     eventChannel.on("booksList",data => {
       this.setData({booksArr:data});
     });
+    console.log(this.data.booksArr)
   },
 
   /**

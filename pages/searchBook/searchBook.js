@@ -5,9 +5,27 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    booksArr:[]
   },
 
+  searchContent(event) {
+    const searchContent=event.detail.value;
+    this.setData({searchContent});
+  },
+  handleClear(){
+    this.setData({searchContent:""});
+    this.setData({booksArr:[]});
+  },
+  handleSearch(){
+    let data={req:this.data.searchContent};
+    wx.request({
+      url: 'http://localhost:3000/searchBooks',
+      data,
+      success: res => {
+        this.setData({booksArr:res.data});
+      }
+    });
+  },
   /**
    * 生命周期函数--监听页面加载
    */
