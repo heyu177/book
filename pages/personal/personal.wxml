@@ -1,2 +1,12 @@
-<!--pages/personal/personal.wxml-->
-<text>pages/personal/personal.wxml</text>
+<view id="personalContainer">
+  <view class="header">
+    <image src="/static/imgs/personal/personal.png"></image>
+    <button>登陆</button>
+  </view>
+  <view class="cardList">
+    <view class="card">
+      <text>扫码看书</text>
+      <text class="more"> > </text>
+    </view>
+  </view>
+</view>

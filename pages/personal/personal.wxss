@@ -1,1 +1,29 @@
-/* pages/personal/personal.wxss */
+#personalContainer .header{
+  padding: 40rpx;
+  background: #02a774;
+}
+#personalContainer .header image{
+  width: 100rpx;
+  height: 100rpx;
+  vertical-align: middle;
+}
+#personalContainer .header button{
+  display: inline-block;
+  height: 60rpx;
+  background: rgba(255, 255, 255, 0.5);
+  vertical-align: middle;
+  margin-left: 40rpx;
+  max-width: 200rpx;
+  padding: 2rpx 0;
+}
+#personalContainer .cardList .card{
+  width: 94%;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin: 10rpx auto;
+  border: 1rpx solid #eee;
+  padding: 10rpx;
+}
+#personalContainer .cardList .card .more{
+  float: right;
+}

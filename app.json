@@ -1,11 +1,11 @@
 {
   "pages": [
+    "pages/personal/personal",
     "pages/searchBook/searchBook",
     "pages/firstView/firstView",
     "pages/booksList/booksList",
     "pages/detail/detail",
-    "pages/index/index",
-    "pages/personal/personal"
+    "pages/index/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#02a774",
