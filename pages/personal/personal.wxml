@@ -1,10 +1,10 @@
 <view id="personalContainer">
   <view class="header">
-    <image src="/static/imgs/personal/personal.png"></image>
-    <button>登陆</button>
+    <image src="{{userInfo ? userInfo.avatarUrl : '/static/imgs/personal/personal.png'}}"></image>
+    <button open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">{{userInfo.nickName ? userInfo.nickName : "登陆"}}</button>
   </view>
   <view class="cardList">
-    <view class="card">
+    <view class="card" bindtap="scan">
       <text>扫码看书</text>
       <text class="more"> > </text>
     </view>

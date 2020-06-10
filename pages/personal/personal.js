@@ -5,14 +5,30 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    
   },
 
+  handleGetUserInfo(event){
+    if (event.detail.userInfo) {
+      this.setData({userInfo:event.detail.userInfo});
+    }
+  },
+  scan(){
+    wx.scanCode({
+      success: (res) => {
+        console.log(res)
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.getUserInfo({
+      success: (res) => {
+        this.setData({userInfo:res.userInfo});
+      }
+    })
   },
 
   /**

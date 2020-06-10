@@ -6,6 +6,7 @@
   width: 100rpx;
   height: 100rpx;
   vertical-align: middle;
+  border-radius: 50rpx;
 }
 #personalContainer .header button{
   display: inline-block;

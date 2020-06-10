@@ -1,4 +1,5 @@
 // pages/searchBook/searchBook.js
+const request=require("../../utils/request.js");
 Page({
 
   /**
@@ -16,15 +17,10 @@ Page({
     this.setData({searchContent:""});
     this.setData({booksArr:[]});
   },
-  handleSearch(){
+  async handleSearch(){
     let data={req:this.data.searchContent};
-    wx.request({
-      url: 'http://localhost:3000/searchBooks',
-      data,
-      success: res => {
-        this.setData({booksArr:res.data});
-      }
-    });
+    const result=await request("/searchBooks",data);
+    this.setData({booksArr:result});
   },
   /**
    * 生命周期函数--监听页面加载
